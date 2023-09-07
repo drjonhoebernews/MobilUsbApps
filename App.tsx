@@ -11,6 +11,7 @@ import {
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Toast from 'react-native-toast-message';
+// @ts-ignore
 import backgroundImage from './/android/app/src/main/assets/background.png';
 
 const App = () => {
@@ -118,6 +119,7 @@ const App = () => {
       });
   };
 
+  // @ts-ignore
   const handleAddBalancebutton = newAmount => {
     axios
       .post('https://rhinoplay.pro/api/addBalanceusb', {
@@ -208,6 +210,7 @@ const App = () => {
       });
   };
 
+  // @ts-ignore
   const handleAddValueToPreviewAmount = value => {
     setPreviewAmount(prevAmount => prevAmount + value);
   };
@@ -543,6 +546,7 @@ const App = () => {
     },
   });
 
+  // @ts-ignore
   return (
     <ImageBackground source={backgroundImage} style={styles.background}>
       <View style={styles.container}>
